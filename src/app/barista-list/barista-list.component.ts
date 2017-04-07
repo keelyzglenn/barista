@@ -14,6 +14,7 @@ import { User } from '../user.model';
 export class BaristaListComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByExperience: string = "allExperiences";
 
   constructor(private router: Router, private userService: UserService) { }
 
@@ -24,5 +25,9 @@ export class BaristaListComponent implements OnInit {
   goToDetailPage(clickedUser) {
     this.router.navigate(['users', clickedUser.$key])
   }
+
+  onChange(optionFromMenu) {
+  this.filterByExperience = optionFromMenu;
+}
 
 }

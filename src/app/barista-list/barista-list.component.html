@@ -1,4 +1,10 @@
-<div *ngFor="let user of users | async" class="list">
+<select (change)="onChange($event.target.value)">
+  <option value="allExperiences" selected="selected">All Members</option>
+  <option value="more">More than 3 years</option>
+  <option value="less">Less than 3 years</option>
+</select>
+
+<div *ngFor="let user of users | async | experience:filterByExperience" class="list">
   <div class="admin-list-view" >
     <div class="well">
       <img src="{{user.image}}" width="170" height="170" class="img-circle">
