@@ -1,9 +1,20 @@
-<div>
-  <img src="{{(userToDisplay | async)?.image}}" alt="" />
-  <h3>{{(userToDisplay | async)?.name}}</h3>
-  <h4>{{(userToDisplay | async)?.position}}</h4>
-  <p>{{(userToDisplay | async)?.company}}</p>
-  <p>{{(userToDisplay | async)?.email}}</p>
-  <p>{{(userToDisplay | async)?.experience}}</p>
-  <p>{{(userToDisplay | async)?.description}}</p>
+<div class="profile-view">
+  <div class="well">
+    <img src="{{(userToDisplay | async)?.image}}" width="170" height="170" class="img-circle" id="profile-image">
+    <h1>{{(userToDisplay | async)?.name}}</h1>
+  </div>
+
+  <div class="text">
+    <h3>Position: {{(userToDisplay | async)?.position}}</h3>
+    <h3>Company: {{(userToDisplay | async)?.company}}</h3>
+    <br>
+    <hr />
+    <h3 class="headers">Personal Information:</h3>
+    <h4>Email: {{(userToDisplay | async)?.email}}</h4>
+    <h4>{{(userToDisplay | async)?.experience}} years in the industry</h4>
+
+    <h3 class="headers">Bio:</h3>
+    <h4>{{(userToDisplay | async)?.description}}</h4>
+  </div>
+
 </div>

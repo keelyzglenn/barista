@@ -97,3 +97,18 @@
 #delete {
   margin: 20px;
 }
+
+
+/*profile*/
+#profile-image {
+  height: 200px;
+  width: 200px;
+}
+
+.profile-view {
+  text-align: center;
+}
+
+.headers {
+  text-align: left;
+}
