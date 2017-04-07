@@ -18,5 +18,9 @@ export class UserService {
     return this.angularFire.database.object('users/' + userId);
   }
 
+  addUser(newUser: User) {
+    this.users.push(newUser);
+  }
+
 
 }

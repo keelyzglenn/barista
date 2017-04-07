@@ -1,0 +1,50 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Member</h3>
+  </div>
+  <div class="panel-body">
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <br>
+        <input #newEmail>
+      </div>
+
+      <div>
+        <label>Position:</label>
+        <br>
+        <input #newPosition>
+      </div>
+
+      <div>
+        <label>Company:</label>
+        <br>
+        <input #newCompany>
+      </div>
+
+      <div>
+        <label>Years of Experience:</label>
+        <br>
+        <input #newExperience>
+      </div>
+
+      <div>
+        <label>Bio:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Image Url:</label>
+        <br>
+        <input #newImage>
+      </div>
+
+      <button (click)="submitForm(newName.value, newEmail.value, newPosition.value, newCompany.value, newExperience.value, newDescription.value, newImage.value); newName.value=''; newEmail.value=''; newPosition.value=''; newCompany.value=''; newExperience.value=''; newDescription.value=''; newImage.value='';">Add</button>
+  </div>
+</div>
