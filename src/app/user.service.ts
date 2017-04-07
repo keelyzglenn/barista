@@ -32,4 +32,9 @@ export class UserService {
                                 description: localUpdatedUser.description,
                                 image: localUpdatedUser.image});
   }
+
+  deleteUser(localUserToDelete){
+    var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+    userEntryInFirebase.remove();
+  }
 }
