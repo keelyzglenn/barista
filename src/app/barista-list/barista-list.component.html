@@ -1,8 +1,13 @@
-<div *ngFor="let user of users | async"  class="panel panel-default">
-  <div class="panel-body" >
-    <h3 (click)="goToDetailPage(user)">{{user.name}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <app-edit-member [selectedUser]="user"></app-edit-member>
+<div *ngFor="let user of users | async">
+  <div class="admin-list-view" >
+    <div class="well">
+      <img src="{{user.image}}" width="170" height="170" class="img-circle">
+        <h3 (click)="goToDetailPage(user)">{{user.name}}</h3>
+    </div>
+    <div class="edit-form">
+      <div *ngIf="currentRoute === '/admin'">
+        <app-edit-member [selectedUser]="user"></app-edit-member>
+      </div>
     </div>
   </div>
 </div>

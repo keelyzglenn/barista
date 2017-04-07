@@ -1,4 +1,9 @@
-<div class="panel panel-default">
+<div class="button-to-show-edit-form">
+<button (click)='showEditForm(selectedUser)'>Edit</button>
+</div>
+
+
+<div class="panel panel-default" *ngIf="editFormIsShowing">
   <div class="panel-heading">
     <h3 class="panel-title">New Member</h3>
   </div>
@@ -45,7 +50,7 @@
         <input [(ngModel)]="selectedUser.image">
       </div>
 
-      <button (click)="beginUpdatingUser(selectedUser)">Add</button>
+      <button (click)="beginUpdatingUser(selectedUser)" (click)="hideEditForm()">Add</button>
   </div>
   <button (click)="beginDeletingUser(selectedUser)">Delete</button>
 </div>

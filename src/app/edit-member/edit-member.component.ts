@@ -27,4 +27,16 @@ export class EditMemberComponent implements OnInit {
     }
   }
 
+  editFormIsShowing = null;
+
+  showEditForm(clickedUser) {
+    this.editFormIsShowing = clickedUser;
+  }
+
+  hideEditForm() {
+    this.editFormIsShowing = null;
+  }
+
+
+
 }
