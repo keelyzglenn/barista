@@ -1,0 +1,27 @@
+{ "users": [{
+    "name": "Keely",
+    "email": "keelyzglenn@gmail.com",
+    "position": "Barista",
+    "company": "Victrola Coffee",
+    "experience": 4,
+    "description": "I have been working in speciality coffee for 4 years. My experience includes Counter Culture Coffee espresso training.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG"
+    }, {
+    "name": "Leo",
+    "email": "leo@gmail.com",
+    "position": "Barista",
+    "company": "Victrola Coffee",
+    "experience": 1,
+    "description": "Hello, my name is Leo. Im the best and I make good coffee too",
+    "image": "http://i.dailymail.co.uk/i/pix/2016/02/02/15/30D0636800000578-3428328-Regular_consumption_of_coffee_may_slash_the_risk_of_the_risk_of_-a-3_1454426820989.jpg"
+      }, {
+    "name": "Ben",
+    "email": "benben@gmail.com",
+    "position": "Head Barista",
+    "company": "Victrola Coffee",
+    "experience": "8",
+    "description": "Hi Im Ben and I love Beyonce, RiRi, and slaying latte art",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Een_kopje_koffie.jpg/1200px-Een_kopje_koffie.jpg"
+
+  }]
+}
