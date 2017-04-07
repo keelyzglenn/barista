@@ -1,4 +1,10 @@
 # Barista
+## by Keely Silva-Glenn
+
+
+## Description
+
+This is a web app roster of Baristas. It allows the user to see all individuals in a club, and for the admin to make corrections and alterations to the informaton displayed.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -26,3 +32,30 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Link
+https://github.com/keelyzglenn/barista
+
+## Technologies Used
+
+* HTML
+* Bootstrap
+* CSS
+* NODE
+* Typscript
+* AngularCli
+
+## Specs
+
+#### The user can see a list of all team members, click a team member and visit their profile page.
+#### The user can navigate to an about page.
+#### The user can filter through users to view specific information.
+
+#### The adnun can add a new user, edit users, and delete users.  
+
+
+## Legal
+MIT License
+
+Copyright (c) 2017 Keely Silva-Glenn
