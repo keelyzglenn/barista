@@ -22,5 +22,14 @@ export class UserService {
     this.users.push(newUser);
   }
 
-
+  updateUser(localUpdatedUser) {
+    var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
+    userEntryInFirebase.update({name: localUpdatedUser.name,
+                                email: localUpdatedUser.email,
+                                position: localUpdatedUser.position,
+                                company: localUpdatedUser.company,
+                                experience: localUpdatedUser.experience,
+                                description: localUpdatedUser.description,
+                                image: localUpdatedUser.image});
+  }
 }

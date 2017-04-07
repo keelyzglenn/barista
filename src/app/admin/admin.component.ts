@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user.model';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import { User } from '../user.model';
 
 
 @Component({

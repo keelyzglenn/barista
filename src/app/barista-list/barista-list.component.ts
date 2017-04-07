@@ -13,6 +13,7 @@ import { User } from '../user.model';
 
 export class BaristaListComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private userService: UserService) { }
 

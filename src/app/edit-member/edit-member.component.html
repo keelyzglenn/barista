@@ -1,0 +1,50 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Member</h3>
+  </div>
+  <div class="panel-body">
+      <div>
+        <label>Name:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.name">
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.email">
+      </div>
+
+      <div>
+        <label>Position:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.position">
+      </div>
+
+      <div>
+        <label>Company:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.company">
+      </div>
+
+      <div>
+        <label>Years of Experience:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.experience">
+      </div>
+
+      <div>
+        <label>Bio:</label>
+        <br>
+        <textarea [(ngModel)]="selectedUser.description"></textarea>
+      </div>
+
+      <div>
+        <label>Image Url:</label>
+        <br>
+        <input [(ngModel)]="selectedUser.image">
+      </div>
+
+      <button (click)="beginUpdatingUser(selectedUser)">Add</button>
+  </div>
+</div>

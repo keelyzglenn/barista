@@ -1,6 +1,8 @@
-<div *ngFor="let user of users | async" (click)="goToDetailPage(user)" class="panel panel-default">
-  <div class="panel-body">
-    <h3>{{user.name}}</h3>
-    <h3>{{user.$key}}</h3>
+<div *ngFor="let user of users | async"  class="panel panel-default">
+  <div class="panel-body" >
+    <h3 (click)="goToDetailPage(user)">{{user.name}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit-member [selectedUser]="user"></app-edit-member>
+    </div>
   </div>
 </div>

@@ -12,6 +12,7 @@ import { BaristaListComponent } from './barista-list/barista-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AdminComponent } from './admin/admin.component';
 import { NewMemberComponent } from './new-member/new-member.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 
 export const firebaseConfig = {
    apiKey: "AIzaSyBBWT-ESKM5MA6usDzkbohH6HBH-yJdQ2o",
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     BaristaListComponent,
     UserProfileComponent,
     AdminComponent,
-    NewMemberComponent
+    NewMemberComponent,
+    EditMemberComponent
   ],
   imports: [
     BrowserModule,
