@@ -1,3 +1,5 @@
-<!-- <p>
-  barista-list works!
-</p> -->
+<div *ngFor="let user of users | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{user.name}}</h3>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from '../user.model';
+import { User } from './user.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
@@ -13,5 +13,10 @@ export class UserService {
   getUsers() {
     return this.users;
   }
+  //
+  // getUsersById(userId: number) {
+  //   for (var i = 0; i <= )
+  // }
+
 
 }

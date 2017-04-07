@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { routing } from '../app.routing';
+// import { Router } from '@angular/router';
 import { User } from '../user.model';
 
 @Component({
