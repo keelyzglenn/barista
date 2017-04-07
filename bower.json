@@ -1,0 +1,17 @@
+{
+  "name": "barista",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Keely Glenn <glenj392@newschool.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
