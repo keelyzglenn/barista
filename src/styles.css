@@ -48,11 +48,52 @@
   text-align: center;
 }
 
+/*about*/
+
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
+
+
+.icons {
+  height: 100px;
+}
+
+#cup {
+  height: 80px;
+}
+
+.three-view {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about-page {
+  text-align: center;
+}
+
 /*list*/
 .admin-list-view {
   text-align: center;
 }
 
-.well {
-  width: 600px;
+
+#delete {
+  margin: 20px;
 }

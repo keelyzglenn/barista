@@ -1,13 +1,13 @@
-<div *ngFor="let user of users | async">
+<div *ngFor="let user of users | async" class="list">
   <div class="admin-list-view" >
     <div class="well">
       <img src="{{user.image}}" width="170" height="170" class="img-circle">
         <h3 (click)="goToDetailPage(user)">{{user.name}}</h3>
-    </div>
-    <div class="edit-form">
-      <div *ngIf="currentRoute === '/admin'">
-        <app-edit-member [selectedUser]="user"></app-edit-member>
-      </div>
+        <div class="edit-form">
+          <div *ngIf="currentRoute === '/admin'">
+            <app-edit-member [selectedUser]="user"></app-edit-member>
+          </div>
+        </div>
     </div>
   </div>
 </div>

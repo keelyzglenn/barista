@@ -1,11 +1,11 @@
 <div class="button-to-show-edit-form">
 <button (click)='showEditForm(selectedUser)'>Edit</button>
 </div>
-
+<br>
 
 <div class="panel panel-default" *ngIf="editFormIsShowing">
   <div class="panel-heading">
-    <h3 class="panel-title">New Member</h3>
+    <h3 class="panel-title">Edit</h3>
   </div>
   <div class="panel-body">
       <div>
@@ -52,5 +52,6 @@
 
       <button (click)="beginUpdatingUser(selectedUser)" (click)="hideEditForm()">Add</button>
   </div>
-  <button (click)="beginDeletingUser(selectedUser)">Delete</button>
+
+  <button id="delete" (click)="beginDeletingUser(selectedUser)">Delete</button>
 </div>
