@@ -20,8 +20,8 @@ export class BaristaListComponent implements OnInit {
     this.users = this.userService.getUsers();
   }
 
-  // goToDetailPage(clickedUser: User) {
-  //   this.router.navigate(['users', clickedUser.id])
-  // }
-  //
+  goToDetailPage(clickedUser) {
+    this.router.navigate(['users', clickedUser.$key])
+  }
+
 }

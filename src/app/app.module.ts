@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { BaristaListComponent } from './barista-list/barista-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 export const firebaseConfig = {
    apiKey: "AIzaSyBBWT-ESKM5MA6usDzkbohH6HBH-yJdQ2o",
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    BaristaListComponent
+    BaristaListComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

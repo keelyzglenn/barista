@@ -13,10 +13,10 @@ export class UserService {
   getUsers() {
     return this.users;
   }
-  //
-  // getUsersById(userId: number) {
-  //   for (var i = 0; i <= )
-  // }
+
+  getUserById(userId: string) {
+    return this.angularFire.database.object('users/' + userId);
+  }
 
 
 }
